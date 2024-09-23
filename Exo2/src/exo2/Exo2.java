@@ -5,6 +5,8 @@
  */
 package exo2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author natac
@@ -17,9 +19,12 @@ public class Exo2 {
     public static void main(String[] args) {
         //Declaration des variables
         int nb; // nombre dentiers a additionner
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\n Entrer le nombre :");
+        nb=sc.nextInt();
         int result; // resultat
         int ind; //indice
-        nb=5;
+        //nb=5;
         result=0;
         // Addition des nb premiers entiers
         ind=1;
