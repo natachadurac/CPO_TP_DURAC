@@ -33,7 +33,7 @@ public class TP1_manipNombresInt_DURAC {
         int produit;
         produit=entier1*entier2;
         int quotient;
-        quotient=entier1/2;
+        quotient=entier1/entier2;
         int modulo;
         modulo=entier1%entier2;
         
