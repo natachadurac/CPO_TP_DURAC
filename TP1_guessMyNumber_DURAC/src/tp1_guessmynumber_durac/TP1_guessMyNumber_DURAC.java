@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Natacha DURAC
+ * 23/09/2024
+ * TP1
  */
 package tp1_guessmynumber_durac;
 
