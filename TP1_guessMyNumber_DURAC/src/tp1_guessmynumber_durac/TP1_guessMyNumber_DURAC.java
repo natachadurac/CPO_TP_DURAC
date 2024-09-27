@@ -24,20 +24,24 @@ public class TP1_guessMyNumber_DURAC {
             //System.out.println(n);
         int n = generateurAleat.nextInt(100);
         int valeur;
+        int cpt;
         Scanner sc = new Scanner(System.in);
         valeur=sc.nextInt();
+        cpt=1;
         if (n==valeur){
             System.out.println("Gagné !");
         }
         while (n!=valeur){
+        
         if (n>valeur){
            System.out.println("Trop petit");
         }
         if (n<valeur){
             System.out.println("Trop grand");
         }
-        System.out.println("Saisissez un nb entre   0 et 100");
-            valeur=sc.nextInt();
+        System.out.println("Saisissez un nb entre 0 et 100");
+        valeur=sc.nextInt();
+        cpt+=1;
         }
         
         }
