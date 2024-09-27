@@ -5,6 +5,8 @@
  */
 package tp1_guessmynumber_durac;
 
+import java.util.Random;
+
 /**
  *
  * @author natac
@@ -15,7 +17,7 @@ public class TP1_guessMyNumber_DURAC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Random generateurAleat = new Random();
     }
     
 }
