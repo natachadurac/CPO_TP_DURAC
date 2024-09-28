@@ -35,7 +35,7 @@ public class TP1_stats_DURAC {
             System.out.println("Face " + (i + 1) + " : " + resultats[i] + " fois");
         }
 
-        // 5. Affichage des résultats en pourcentages
+        
         System.out.println("\nRésultats des lancers en pourcentages :");
         for (int i = 0; i < resultats.length; i++) {
             double pourcentage = (double) resultats[i] * 100 / m; // Calcul du pourcentage
