@@ -11,4 +11,7 @@ package tp2_convertisseurobjet_durac;
 public class Convertisseur {
     int nbConversions;
     
+    public Convertisseur () {
+        nbConversions = 0 ;
+    }
 }
