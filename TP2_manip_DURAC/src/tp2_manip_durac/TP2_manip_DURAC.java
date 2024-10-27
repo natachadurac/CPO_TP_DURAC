@@ -25,6 +25,20 @@ public class TP2_manip_DURAC {
         assiette2.incrementerCalories(100);
         System.out.println("nb de calories de Assiette 2 : " +assiette2.nbCalories) ;
         System.out.println("nb de calories de Assiette 3 : " +assiette3.nbCalories) ;
+        
+        Tartiflette temp = assiette1; 
+        assiette1 = assiette2;
+        assiette2 = temp;
+        
+        System.out.println("nb de calories de Assiette 1 : " +assiette1.nbCalories) ;
+        System.out.println("nb de calories de Assiette 2 : " +assiette2.nbCalories) ;
+        
+        Moussaka[] moussakas = new Moussaka[10];
+        for (int i = 0; i < moussakas.length; i++) {
+            moussakas[i] = new Moussaka(300 + (i * 50));
+        }
+        
+        
 
     }
     
