@@ -36,6 +36,7 @@ public class TP2_manip_DURAC {
         Moussaka[] moussakas = new Moussaka[10];
         for (int i = 0; i < moussakas.length; i++) {
             moussakas[i] = new Moussaka(300 + (i * 50));
+            System.out.println(moussakas[i].nbCalories);
         }
         
         
