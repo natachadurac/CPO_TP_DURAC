@@ -19,6 +19,6 @@ public abstract class Arme {
    
     @Override
     public String toString () {
-        return "Le nom de l'arme est : "+nom+"\nLe niv attaque vaut : "+niv_attaque;
+        return "Le nom de l'arme est : "+nom+" Le niv attaque vaut : "+niv_attaque;
     }
 }
