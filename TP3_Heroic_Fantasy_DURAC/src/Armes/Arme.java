@@ -9,16 +9,24 @@ package Armes;
  * @author natac
  */
 public abstract class Arme {
-    String nom;
-    int niv_attaque;
+    private String nom;
+    private int niveauAttaque;
 
-    public Arme(String nom, int niv_attaque) {
+    public Arme(String nom, int niveauAttaque) {
         this.nom = nom;
-        this.niv_attaque = niv_attaque;
+        this.niveauAttaque = Math.min(niveauAttaque, 100);
     }
-   
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getNiveauAttaque() {
+        return niveauAttaque;
+    }
+
     @Override
-    public String toString () {
-        return "Le nom de l'arme est : "+nom+" Le niv attaque vaut : "+niv_attaque;
+    public String toString() {
+        return "Arme: " + nom + ", Niveau d'attaque: " + niveauAttaque;
     }
 }

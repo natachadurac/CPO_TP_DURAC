@@ -13,20 +13,17 @@ import Armes.Arme;
 public class Epee extends Arme {
     private int finesse;
 
-    public Epee(String nom, int finesse, int niv_attaque) {
-        super(nom, niv_attaque);
-        if (finesse > 100) {
-            this.finesse = 100;
-        } else if (finesse < 0) {
-            this.finesse = 0;
-        this.finesse = finesse;
-        }
+    public Epee(String nom, int niveauAttaque, int finesse) {
+        super(nom, niveauAttaque);
+        this.finesse = Math.min(finesse, 100);
+    }
+
+    public int getFinesse() {
+        return finesse;
     }
 
     @Override
     public String toString() {
-        return "Epee{" +super.toString()+ "finesse=" + finesse + '}';
+        return super.toString() + ", Finesse: " + finesse;
     }
-    
-    
 }

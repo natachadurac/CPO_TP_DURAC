@@ -13,15 +13,17 @@ import Armes.Arme;
 public class Baton extends Arme {
     private int age;
 
-    public Baton(String nom, int age, int niv_attaque) {
-        super(nom, niv_attaque);
-        if (age > 100) {
-            this.age = 100;
-        } else if (age < 0) {
-            this.age = 0;
-        this.age = age;
-        }
+    public Baton(String nom, int niveauAttaque, int age) {
+        super(nom, niveauAttaque);
+        this.age = Math.min(age, 100);
     }
-    
-    
+
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Âge: " + age;
+    }
 }
